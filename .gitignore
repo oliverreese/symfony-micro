@@ -1,0 +1,12 @@
+nbproject/
+
+vendor/
+
+var/cache/*
+var/logs/*
+!var/cache/.gitkeep
+!var/logs/.gitkeep
+
+bin/*
+!bin/console
+composer.lock
