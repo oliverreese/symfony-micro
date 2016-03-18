@@ -12,7 +12,7 @@ class ExampleController extends Controller
     public function randomAction($limit)
     {
         $conn = $this->get('database_connection');
-var_dump($conn);
+
         $number = rand(0, $limit);
 
         return $this->render('example/random.html.twig', array(
