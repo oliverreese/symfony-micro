@@ -19,6 +19,7 @@ class AppKernel extends Kernel
     {
         $bundles = array(
             new Symfony\Bundle\FrameworkBundle\FrameworkBundle(),
+            new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Symfony\Bundle\TwigBundle\TwigBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle()
         );
@@ -54,7 +55,7 @@ class AppKernel extends Kernel
         // load the annotation routes
         $routes->mount(
             '/',
-            $routes->import(__DIR__.'/../src/App/Controller/', 'annotation')
+            $routes->import(__DIR__.'/../src/AppBundle/Controller/', 'annotation')
         );
     }
     

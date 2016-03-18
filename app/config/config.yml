@@ -1,6 +1,17 @@
+imports:
+    - { resource: parameters.yml }
+
 framework:
     test: ~
-    secret: S0ME_SECRET
+    secret: %kernel.secret%
     templating:
         engines: ['twig']
     profiler: { only_exceptions: false }
+doctrine:
+    dbal:
+        driver:   %database_driver%
+        dbname:   %database_name%
+        user:     %database_user%
+        password: %database_password%
+        charset:  %database_chartset%
+        server_version: %database_server_version%
