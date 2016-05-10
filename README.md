@@ -2,6 +2,11 @@
 
 skeleton for symfony micro framework based on MicroKernelTrait
 
+install dependencies with composer:
+```sh
+$ composer update
+```
+
 start build in webserver:
 ```sh
 $ bin/console server:run localhost
